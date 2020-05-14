@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='/neednow/home/style.css'>
+</head>
+<body style='background-image:url("bg.jpg");background-repeat:no-repeat;'>
+<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>NeedNow</header>
+  <ul>
+<li><a href="/neednow/home/index.html"><i class="fas fa-qrcode"></i>Home</a></li>
+<li><a href="/neednow/calculator/index.html"><i class="fas fa-link"></i>Calculator</a></li>
+<li><a href="/neednow/todo/index.php"><i class="fas fa-stream"></i>ToDo</a></li>
+<li><a href="/neednow/weather/index.html"><i class="fas fa-calendar-week"></i>Weather</a></li>
+<li><a href="/neednow/about.html"><i class="far fa-question-circle"></i>About</a></li>
+
+</ul>
+</div>
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="input_text" style='background-color:#1781b3'>
+      <input type="submit" value="Submit" class="submit" style='cursor: pointer;
+  background-color:#e2926a;border-radius:11px 3px;color:white;border:none;margin-left:15px'>
+    </div>
+
+  <div class="container" style="">
+    <div class="card" style='background-color:inherit'>
+      <h1 class="name" id="name"style='color:white;font-size:56px;font-weight:bold'></h1>
+      <p class="temp"style='color:black;font-size:76px;text-decoration:italic'></p>
+      <p class="clouds"></p>
+      <p class="desc"style='color:white;font-size:48px'></p>
+    </div>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>

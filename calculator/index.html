@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="/neednow/home/style.css">
+
+</head>
+<body>
+<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>NeedNow</header>
+  <ul>
+<li><a href="/neednow/home/index.html"><i class="fas fa-qrcode"></i>Home</a></li>
+<li><a href="/neednow/calculator/index.html"><i class="fas fa-link"></i>Calculator</a></li>
+<li><a href="/neednow/todo/index.php"><i class="fas fa-stream"></i>ToDo</a></li>
+<li><a href="/neednow/weather/index.html"><i class="fas fa-calendar-week"></i>Weather</a></li>
+<li><a href="/neednow/about.html"><i class="far fa-question-circle"></i>About</a></li>
+
+</ul>
+</div>
+<h1>Calculator</h1>
+
+<p class="warning">Don't divide by zero</p>
+
+<div id="calculator" class="calculator">
+
+  <button id="clear" class="clear">C</button>
+
+  <div id="viewer" class="viewer">0</div>
+
+  <button class="num" data-num="7">7</button>
+  <button class="num" data-num="8">8</button>
+  <button class="num" data-num="9">9</button>
+  <button data-ops="plus" class="ops">+</button>
+
+  <button class="num" data-num="4">4</button>
+  <button class="num" data-num="5">5</button>
+  <button class="num" data-num="6">6</button>
+  <button data-ops="minus" class="ops">-</button>
+
+  <button class="num" data-num="1">1</button>
+  <button class="num" data-num="2">2</button>
+  <button class="num" data-num="3">3</button>
+  <button data-ops="times" class="ops">*</button>
+
+  <button class="num" data-num="0">0</button>
+  <button class="num" data-num=".">.</button>
+  <button id="equals" class="equals" data-result="">=</button>
+  <button data-ops="divided by" class="ops">/</button>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
